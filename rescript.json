@@ -1,0 +1,13 @@
+{
+  "name": "libfp",
+  "version": "0.0.1",
+  "sources": [{ "dir": "src" }],
+  "package-specs": {
+    "module": "es6",
+    "in-source": true,
+    "suffix": ".bs.js"
+  },
+  "gentypeconfig": {
+    "moduleResolution": "node"
+  }
+}

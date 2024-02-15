@@ -1,0 +1,27 @@
+{
+  "name": "libfp",
+  "version": "0.0.1",
+  "scripts": {
+    "clean": "rescript clean",
+    "build": "rescript",
+    "watch": "rescript build -w"
+  },
+  "keywords": [
+    "fp",
+    "typescript",
+    "javascript",
+    "rescript"
+  ],
+  "homepage": "pd4d10/libfp",
+  "author": "Rongjian Zhang <pd4d10@gmail.com>",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@rescript/core": "^1.0.0",
+    "rescript": "^11.0.1",
+    "typescript": "^5.3.3"
+  },
+  "packageManager": "pnpm@8.15.3"
+}
