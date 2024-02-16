@@ -1,0 +1,11 @@
+{
+  "yaml.schemas": {
+    "https://raw.githubusercontent.com/ast-grep/ast-grep/main/schemas/project.json": [
+      "sgconfig.yml"
+    ],
+    "https://raw.githubusercontent.com/ast-grep/ast-grep/main/schemas/rule.json": [
+      "scripts/rules/*.yml"
+    ]
+  },
+  "astGrep.serverPath": "./node_modules/.bin/sg"
+}
