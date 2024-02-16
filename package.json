@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "build": "rescript clean && rescript && pnpm patch-types && vite build && tsc",
+    "build": "node scripts/gen-res.js && rescript clean && rescript && pnpm patch-types && vite build && tsc",
     "patch-types": "sg scan --update-all src/*.tsx"
   },
   "keywords": [
@@ -20,7 +20,9 @@
   ],
   "devDependencies": {
     "@ast-grep/cli": "^0.19.0",
+    "@ast-grep/napi": "^0.19.0",
     "@rescript/core": "^1.0.0",
+    "fast-glob": "^3.3.2",
     "rescript": "^11.0.1",
     "typescript": "^5.3.3",
     "vite": "^5.1.2"
