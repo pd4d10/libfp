@@ -3,8 +3,8 @@
   "version": "0.0.1",
   "type": "module",
   "scripts": {
-    "build": "rescript clean && rescript && vite build && tsc",
-    "dev": "rescript build -w"
+    "build": "rescript clean && rescript && pnpm patch-types && vite build && tsc",
+    "patch-types": "sg scan --update-all src/*.tsx"
   },
   "keywords": [
     "fp",

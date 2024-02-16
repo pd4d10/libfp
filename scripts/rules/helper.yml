@@ -1,0 +1,10 @@
+id: helpers
+language: tsx
+rule:
+  all:
+    - kind: comment
+    - precedes:
+        not:
+          kind: comment
+  pattern: $T
+fix: $T import { Option } from "./helpers";
