@@ -1,0 +1,4 @@
+ruleDirs:
+  - ./scripts/rules
+utilDirs:
+  - ./scripts/utils

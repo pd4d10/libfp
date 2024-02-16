@@ -10,5 +10,8 @@
   "bs-dependencies": ["@rescript/core"],
   "gentypeconfig": {
     "generatedFileExtension": ""
+  },
+  "js-post-build": {
+    "cmd": "./node_modules/.bin/sg scan --update-all ../../src/*.tsx"
   }
 }

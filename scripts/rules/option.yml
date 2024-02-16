@@ -1,0 +1,13 @@
+id: option
+language: tsx
+rule:
+  kind: union_type
+  all:
+    - has:
+        kind: literal_type
+        has:
+          pattern: undefined
+    - has:
+        kind: type_identifier
+        pattern: $T
+fix: Option<$T>
