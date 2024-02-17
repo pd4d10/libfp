@@ -4,7 +4,7 @@ import { js } from "@ast-grep/napi";
 import fg from "fast-glob";
 
 // clean
-fg.sync("src/*.res", { absolute: true }).forEach((file) => {
+fg.sync("src/*.{res,tsx}", { absolute: true }).forEach((file) => {
   fs.unlinkSync(file);
 });
 
@@ -50,5 +50,5 @@ fg.sync("./node_modules/@rescript/core/src/*.mjs", {
     .map((name) => `@genType let ${name} = RescriptCore.${moduleName}.${name}`)
     .join("\n");
 
-  fs.writeFileSync(`src/${moduleName}.res`, code);
+  fs.writeFileSync(`src/${moduleName.toLowerCase()}.res`, code);
 });
