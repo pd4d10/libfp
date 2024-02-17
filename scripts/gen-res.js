@@ -13,7 +13,7 @@ const blockedModule = ["JSON", "Type"];
 /** @type {Record<string, (string | RegExp)[]>} */
 const blockedFn = {
   Array: ["swapUnsafe"],
-  List: [/Aux/],
+  List: [/Aux/, "reduceReverseUnsafeU", "reduceReverse2UnsafeU"],
 };
 
 fg.sync("./node_modules/@rescript/core/src/*.mjs", {
